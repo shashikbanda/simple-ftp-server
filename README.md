@@ -22,10 +22,15 @@ Each pass after this, the server will be running. Any commands sent through the 
 Example: 
 
 python ftclient.py 30001 -l 30002
+
 python ftclient.py 30001 -g shortfile.txt 30006
+
 python ftclient.py 30001 -l 30008
+
 .
+
 .
+
 .
 
 Note: In FTP, it takes two TCP connections to transfer a file. The first is the control connection. This is to look through the file system of server. The second is the data connection to transfer the file on. <DATA PORT> is where we are transferring the file to on the client's machine.
